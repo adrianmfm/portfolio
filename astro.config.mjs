@@ -6,6 +6,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://github.com/adrianmfm/portfolio.git',
   base: '/portfolio/',
   devToolbar: {
     enabled: false
