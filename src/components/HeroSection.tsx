@@ -122,7 +122,7 @@ export default function HeroSection() {
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-                🚀 Soy desarrollador con experiencia en frontend, backend y análisis de datos. sisis
+                🚀 Soy desarrollador con experiencia en frontend, backend y análisis de datos.
                 He trabajado en distintos proyectos aplicando metodologías ágiles como Scrum y siempre busco crear soluciones tecnológicas prácticas, 
                 bien diseñadas y pensadas en el usuario. Me gusta aprender cosas nuevas, trabajar en equipo y enfrentar desafíos con buena actitud.
             </p>
