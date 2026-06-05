@@ -8,52 +8,65 @@ export const personalInfo = {
 
 export const workExperience = [
   {
+    company: "Nxtara",
+    location: "Santiago, Chile",
+    position: "Frontend & Mobile Developer",
+    period: "Mayo 2025 – Actualmente",
+    achievements: [
+      "Desarrollo y mantención de plataformas eCommerce y aplicaciones móviles utilizando React, React Native, Next.js y TypeScript.",
+      "Implementación de funcionalidades frontend enfocadas en rendimiento, escalabilidad y experiencia de usuario.",
+      "Integración de APIs REST y optimización de consumo de datos en aplicaciones web y mobile.",
+      "Lideré la creación de componentes reutilizables y estándares visuales tipo Design System, mejorando la consistencia y reutilización en los proyectos.",
+      "Trabajo colaborativo con equipos de UX/UI y producto, participando en la definición de flujos, revisión de diseños en Figma y validación de experiencia de usuario.",
+      "Adaptación de diseños desde Figma asegurando fidelidad visual y experiencia responsive.",
+      "Trabajo colaborativo con equipos backend y QA bajo metodologías ágiles (Scrum).",
+    ],
+  },
+  {
     company: "Tooxs",
     location: "Santiago, Chile",
-    position: "Software Engineer",
-    period: "Nov 2024 - Mar 2025",
+    position: "Software Developer",
+    period: "Nov 2024 – Mar 2025",
     achievements: [
-      "Participé en el desarrollo de una plataforma educativa orientada a profesores, que integraba inteligencia artificial basada en el currículo nacional para facilitar la gestión de clases mediante componentes como lista de estudiantes, libro de clases y otros recursos. Dentro del equipo, me enfoqué en la implementación de interfaces interactivas y responsivas, asegurando una experiencia de usuario óptima en distintos dispositivos. Convertí diseños desde Figma a interfaces web accesibles y de alta fidelidad. También colaboré en la creación de servicios en Angular para consumir APIs de forma eficiente, utilizando RxJS para manejar flujos de datos de manera reactiva. Contribuí al desarrollo y mejora de componentes reutilizables con Angular y PrimeNG, lo que permitió optimizar tiempos de desarrollo y mantener un código más limpio. Además, participé en el diseño y desarrollo de la landing page del proyecto utilizando Astro y React.",
+      "Desarrollo de interfaces web interactivas y responsivas utilizando Angular y TypeScript.",
+      "Creación de servicios para consumo de APIs utilizando RxJS y arquitectura reactiva.",
+      "Desarrollo y optimización de componentes reutilizables con Angular y PrimeNG.",
+      "Participación en el diseño e implementación de nuevas secciones y flujos de la plataforma web, colaborando en decisiones de experiencia de usuario e interfaz.",
     ],
   },
   {
     company: "Banco BCI",
     location: "Santiago, Chile",
-    position: "Frontend developer Marketing - Intership",
-    period: "Mar 2024 - Ago 2024",
+    position: "Frontend Developer",
+    period: "Mar 2024 – Ago 2024",
     achievements: [
-      "Trabajé como desarrollador frontend dentro de un equipo de optimización de conversión (CRO), donde me encargaba de implementar experimentos de A/B testing enfocados en mejorar la experiencia del usuario en las plataformas digitales del banco. Utilicé tecnologías como HTML, CSS, JavaScript y Angular para desarrollar interfaces basadas en diseños de Figma, asegurando una correcta visualización y funcionamiento. Aunque el análisis de datos lo realizaba el equipo de CRO, colaboraba estrechamente con ellos para implementar los cambios necesarios según los resultados obtenidos en herramientas como VWO, Google Analytics y Google Tag Manager. Gracias a estas implementaciones, contribuí indirectamente a la mejora en la tasa de conversión de productos digitales del banco..",
+      "Desarrollo de interfaces frontend para experimentos de A/B Testing orientados a optimización de conversión y experiencia de usuario.",
+      "Implementación de variantes visuales y funcionales para análisis de comportamiento de usuarios.",
+      "Experimentos A/B que generaron incrementos en la tasa de conversión en distintos productos digitales, apoyando decisiones de negocio basadas en datos.",
+      "Desarrollo de interfaces utilizando HTML, CSS y JavaScript basadas en diseños de Figma.",
     ],
   },
   {
     company: "Genera CC",
     location: "Santiago, Chile",
-    position: "Analista de desarrollo",
-    period: "Ene 2023 - Ago 2023",
+    position: "Analista de Desarrollo",
+    period: "Ene 2023 – Ago 2023",
     achievements: [
-      "Desarrollé el módulo de administración para un call center utilizando React, enfocándome en la construcción de interfaces funcionales. Además de mi rol principal como desarrollador frontend, brindé apoyo en el backend mediante el desarrollo de microservicios en Java con Spring Boot. También participé activamente en tareas relacionadas con bases de datos, realizando limpieza, preparación y carga de datos para campañas en PostgreSQL y gestionando bases en SQL Server.",
+      "Desarrollo del módulo de administración para un call center utilizando React.",
+      "Soporte en la gestión de bases de datos SQL Server.",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "Duoc UC",
+    institution: "DUOC UC",
     location: "Santiago, Chile",
-    degree: "Analista Programador",
-    period: "Ene 2022 - Jun 2024",
+    degree: "Ingeniería en Informática",
+    period: "2022 – 2025",
     achievements: [
-      "Participación en proyectos académicos de desarrollo web y análisis de datos",
-    ],
-  },
-  {
-    institution: "Duoc UC",
-    location: "Santiago, Chile",
-    degree: "Ingeniero en Informática",
-    period: "2022 - 2025 (vespertino)",
-    achievements: [
-      "Estudios enfocados en desarrollo de software, gestión de proyectos y análisis de datos",
-      "Participación en proyectos académicos de desarrollo de sistemas y arquitectura en la nube"
+      "Estudios enfocados en desarrollo de software, gestión de proyectos y arquitectura en la nube.",
+      "Participación en proyectos académicos de desarrollo de sistemas.",
     ],
   },
 ];
@@ -63,32 +76,34 @@ export const skills = {
   programmingLanguages: [
     "TypeScript",
     "JavaScript",
-    "Python",
     "Java",
   ],
   frontendDevelopment: [
-    "Nextjs",
-    "Reactjs",
+    "React",
+    "Next.js",
+    "React Native",
     "Angular",
     "Tailwind CSS",
-    "Bootstrap",
     "Astro",
     "HTML",
     "CSS",
   ],
-  dataAnalysis: [
-    "Python",
-    "Pandas",
-    "NumPy",
-    "Matplotlib",
-    "Power BI",
-    "Tableau",
-    "Excel",
-    "Google Analytics",
-    "SQL",
-  ],
-  backendDevelopment: ["Nodejs", "Expressjs", "Spring Boot"],
+  backendDevelopment: ["Node.js", "Express.js", "Spring Boot"],
   databaseAndStorage: ["PostgreSQL", "SQL Server"],
+  cloudAndDevOps: [
+    "GCP Cloud Run",
+    "Cloud Storage",
+    "BigQuery",
+    "Azure DevOps",
+  ],
+  toolsAndMethodologies: [
+    "Figma",
+    "Scrum",
+    "Agile",
+    "GitHub Copilot",
+    "Jest",
+    "REST APIs",
+  ],
 };
 
 export const projects = [

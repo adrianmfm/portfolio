@@ -1,71 +1,44 @@
 import { education } from "@/lib/data";
-import TimelineItem from "./TimelineItem";
-import { Award } from "lucide-react";
-import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
 export default function EducationSection() {
   return (
-    <section
-      id="education"
-      className="py-12 bg-gradient-to-b from-muted/10 to-background"
-    >
-      <div className="container max-w-4xl mx-auto px-6 md:px-4">
-        <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🎓 Education
-          </h2>
-        </MotionWrapper>
+    <section id="education" className="max-w-3xl mx-auto px-6 py-16 border-t border-border/50">
+      <motion.h2
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+        className="text-xs uppercase tracking-widest text-muted-foreground mb-10"
+        style={{ fontFamily: "'DM Mono', monospace" }}
+      >
+        Educación
+      </motion.h2>
 
-        <div className="mb-8">
-          {education.map((edu, index) => (
-            <TimelineItem
-              key={edu.institution}
-              title={`🎓 ${edu.degree}`}
-              subtitle={`🏛️ ${edu.institution}`}
-              date={`📅 ${edu.period}`}
-              isLast={index === education.length - 1}
-              index={index}
-            >
-              <p className="text-sm text-muted-foreground mb-3">
-                📍 {edu.location}
-              </p>
-
-              {edu.achievements && edu.achievements.length > 0 && (
-                <motion.div
-                  className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex items-center mb-3">
-                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                      <Award className="h-4 w-4 text-purple-500" />
-                    </div>
-                    <h4 className="text-sm font-medium">
-                      ✨ Achievements & Activities
-                    </h4>
-                  </div>
-                  <ul className="list-none ml-4 space-y-2 text-sm">
-                    {edu.achievements.map((achievement, i) => (
-                      <motion.li
-                        key={i}
-                        className="text-muted-foreground relative pl-6"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3, delay: 0.1 * i }}
-                        viewport={{ once: true }}
-                      >
-                        {achievement}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
-              )}
-            </TimelineItem>
-          ))}
-        </div>
+      <div className="space-y-0">
+        {education.map((edu, index) => (
+          <motion.div
+            key={edu.institution + edu.degree}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.4, delay: index * 0.08 }}
+            className="border-b border-border/50 py-6 first:pt-0 last:border-b-0"
+          >
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1">
+              <div>
+                <h3 className="text-sm font-medium text-foreground">{edu.degree}</h3>
+                <p className="text-sm text-muted-foreground mt-0.5">{edu.institution} — {edu.location}</p>
+              </div>
+              <span
+                className="text-xs text-muted-foreground shrink-0 mt-0.5"
+                style={{ fontFamily: "'DM Mono', monospace" }}
+              >
+                {edu.period}
+              </span>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
